@@ -1,0 +1,23 @@
+{
+  "name": "softwaresolutions",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/easa/softwaresolutions.git"
+  },
+  "keywords": [],
+  "author": "easa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/easa/softwaresolutions/issues"
+  },
+  "homepage": "https://github.com/easa/softwaresolutions#readme",
+  "devDependencies": {
+    "staticpug": "^0.2.17"
+  }
+}
