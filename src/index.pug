@@ -4,7 +4,7 @@ append body
   -
     var headerContent = [
       {link:'blog', title:'Blog Posts'},
-      {link:'https://github.com/easa/staticpug/issues/new', title:'Add New Issue'}
+      {link:'https://github.com/easa/softwaresolutions/issues/new', title:'Add New Issue'}
     ]
 
   .d-flex.flex-column.flex-md-row.align-items-center.p-3.px-md-4.mb-3.bg-white.border-bottom.box-shadow
@@ -13,64 +13,70 @@ append body
       each item in headerContent
         a.p-2.text-dark(href=item.link)= item.title
 
-    a.btn.btn-outline-primary(href='#') Sign up
-  
+    //- a.btn.btn-outline-primary(href='#') Sign up
+
   .container
     .pricing-header.px-3.py-3.pt-md-5.pb-md-4.mx-auto.text-center
-      h1.display-4 Pricing
+      h1.display-4 Easa's software solutions
       p.lead
-        | Welcome to homepage of your website. In order to see your blog posts, please click on 
-        a(href='blog') Blog Posts
-        | ! and to make new issue on statigpug, please click on 
-        a(href='https://github.com/easa/staticpug/issues/new') Add New Issue
-        | ! Quickly build your static weblog effective and completely free. 
-        | It's easy to manage your content this way, simply by adding a markdown file on github.
-        | If you have further question, don't hesitate to contact us. 
-        | there is a simple pricing table for your potential customers with this Bootstrap example. It's built with default Bootstrap components and utilities with little customization.
-    .container
-      .card-deck.mb-3.text-center
-        each card in cards 
-          include /../component/card.pug
-        
-    footer.pt-4.my-md-5.pt-md-5.border-top
-      .row
-        .col-12.col-md
-          img.mb-2(src='https://getbootstrap.com/assets/brand/bootstrap-solid.svg', alt='', width='24', height='24')
-          small.d-block.mb-3.text-muted © #{year}
-        .col-6.col-md
-          h5 Features
-          ul.list-unstyled.text-small
-            li
-              a.text-muted(href='#') Cool stuff
-            li
-              a.text-muted(href='#') Random feature
-            li
-              a.text-muted(href='#') Team feature
-            li
-              a.text-muted(href='#') Stuff for developers
-            li
-              a.text-muted(href='#') Another one
-            li
-              a.text-muted(href='#') Last time
-        .col-6.col-md
-          h5 Resources
-          ul.list-unstyled.text-small
-            li
-              a.text-muted(href='#') Resource
-            li
-              a.text-muted(href='#') Resource name
-            li
-              a.text-muted(href='#') Another resource
-            li
-              a.text-muted(href='#') Final resource
-        .col-6.col-md
-          h5 About
-          ul.list-unstyled.text-small
-            li
-              a.text-muted(href='#') Team
-            li
-              a.text-muted(href='#') Locations
-            li
-              a.text-muted(href='#') Privacy
-            li
-              a.text-muted(href='#') Terms
+        | Hi, and welcome to our website. 
+        //- In order to see your blog posts, please click on 
+        //- a(href='blog') Blog Posts
+        //- | ! and to make new issue on statigpug, please click on 
+        //- a(href='https://github.com/easa/staticpug/issues/new') Add New Issue
+        br
+        | We are a team of professional, young, smart and talented people. 
+        br
+        | We would provide you a complete guide for your specific needs to help you automate your business. We would develop a flux and flexible web based application on a very agile and open-source platform.
+        | Just let us know the problem that you currently have in your business. Let us do the rest for you in no time.
+        br
+        | Don't hesitate to contact us via 
+        a(href='mailto:eisanodehi@gmail.com') email 
+        | or add a new issue on github. 
+
+  .container
+    //- .card-deck.mb-3.text-center
+    //-   each card in cards 
+    //-     include /../component/card.pug
+
+  footer.pt-4.my-md-5.pt-md-5.border-top
+    .row
+      .col-12.col-md
+        //- img.mb-2(src='https://getbootstrap.com/assets/brand/bootstrap-solid.svg' alt='' width='24' height='24')
+        | Easa's software solutions 
+        small.d-block.mb-3.text-muted © #{year}
+      .col-6.col-md
+        h5 Projects
+        ul.list-unstyled.text-small
+          li
+            a.text-muted(href='/project/trade') Trade bot
+          li
+            a.text-muted(href='/project/playlist') Transfer playlist
+          li
+            a.text-muted(href='/project/form') Form builder
+          li
+            a.text-muted(href='/project/tokenizer') Text tokenizer
+          li
+            a.text-muted(href='/project/trader') Trader assistant
+          li
+            a.text-muted(href='/project/staticpug') Static website generator
+      .col-6.col-md
+        h5 Resources
+        ul.list-unstyled.text-small
+          li
+            a.text-muted(href='/stacks') Stacks
+          li
+            a.text-muted(href='/architecture') Software flux architecture
+          li
+            a.text-muted(href='/principles') clean architecture principles
+      .col-6.col-md
+        h5 About
+        ul.list-unstyled.text-small
+          li
+            a.text-muted(href='/goal') Goal
+          li
+            a.text-muted(href='/team') Team
+          li
+            a.text-muted(href='/privacy') Privacy
+          li
+            a.text-muted(href='/terms') Terms
